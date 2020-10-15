@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>St Paul Skyway test</name>
+    <description/>
+    <Style id="icon-1577-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1577-0F9D58-labelson-nodesc">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1783-795548-nodesc-normal">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1783-795548-nodesc-highlight">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1783-795548-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1783-795548-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1783-795548-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-7975-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>7.975</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-7975-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>11.9625</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-7975-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-7975-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-7975-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0F9D58-8169-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>8.169</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0F9D58-8169-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>12.2535</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0F9D58-8169-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0F9D58-8169-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0F9D58-8169-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-795548-7394-nodesc-normal">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>7.394</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-795548-7394-nodesc-highlight">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>11.091</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-795548-7394-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-795548-7394-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-795548-7394-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-8169-nodesc-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>8.169</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-E65100-8169-nodesc-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>12.2535</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-E65100-8169-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-8169-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-8169-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Skyway Restaurants</name>
+      <Placemark>
+        <name><![CDATA[Lee's Express]]></name>
+        <styleUrl>#icon-1577-0F9D58-labelson-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -93.0958476,44.9481537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Freshii</name>
+        <description>https://maps.google.com/?cid=5176295200517306334</description>
+        <styleUrl>#icon-1577-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -93.0941892,44.9480995,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Jimmy John's]]></name>
+        <description>View in Google Maps: https://maps.google.com/?cid=5054992971577724758</description>
+        <styleUrl>#icon-1577-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -93.0941503,44.9481593,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Skyway Path</name>
+      <Placemark>
+        <name>St Paul Hotel
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0958071,44.9449308,0
+            -93.0954785,44.9446346,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Saint Paul RiverCentre
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0985015,44.9442022,0
+            -93.0984934,44.944294,0
+            -93.1002958,44.9444725,0
+            -93.1004809,44.9442352,0
+            -93.100615,44.9439599,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>RiverCentre Parking Ramp
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.1007017,44.9434805,0
+            -93.1005582,44.9434653,0
+            -93.1005837,44.943398,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>4th Street Stair Tower
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0957348,44.9441288,0
+            -93.0956109,44.9441466,0
+            -93.0956194,44.9441992,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Landmark Towers
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0955443,44.94439,0
+            -93.0955934,44.9446231,0
+            -93.0952984,44.9446497,0
+            -93.0954177,44.9446373,0
+            -93.0953802,44.944512,0
+            -93.0955679,44.9444949,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>345 Cedar St
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0931354,44.9455813,0
+            -93.0930522,44.9456269,0
+            -93.0930375,44.9457076,0
+            -93.0929382,44.9457598,0
+            -93.0930375,44.9457067,0
+            -93.0928215,44.9454561,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Vicoty Parking Ramp
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0940521,44.9455083,0
+            -93.0935779,44.9457456,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Degree of Hornor
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0926565,44.9452915,0
+            -93.0925774,44.9452087,0
+            -93.0926096,44.9451909,0
+            -93.092576,44.9452087,0
+            -93.0922703,44.9449146,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Walsh and Gaertner Building
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0927356,44.9451311,0
+            -93.0928228,44.9450844,0
+            -93.0927651,44.9450236,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>InterContinental Saint Paul Riverfront
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0927651,44.9450236,0
+            -93.092458,44.9446866,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>World Trade Parking Ramp
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0968777,44.9488393,0
+            -93.0969729,44.9487946,0
+            -93.0967382,44.9485478,0
+            -93.0966913,44.9485716,0
+            -93.0966636,44.9485391,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>380 Jackson Street
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0892376,44.9493119,0
+            -93.089056,44.948948,0
+            -93.0888186,44.9490629,0
+            -93.0886791,44.9489186,0
+            -93.0885933,44.9489603,0
+            -93.0886791,44.9489195,0
+            -93.0885356,44.9487658,0
+            -93.0888038,44.9486215,0
+            -93.0887035,44.9485386,0
+            -93.0888038,44.9486215,0
+            -93.0891069,44.9484924,0
+            -93.0893282,44.9483909,0
+            -93.0894864,44.9485408,0
+            -93.0897191,44.9484529,0
+            -93.0894851,44.9485408,0
+            -93.0896085,44.9486652,0
+            -93.0892316,44.9488351,0
+            -93.0889527,44.9485551,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 25</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0879852,44.9477813,0
+            -93.088023,44.9477609,0
+            -93.0880632,44.9478056,0
+            -93.0881445,44.9477637,0
+            -93.0885817,44.9482459,0
+            -93.0885656,44.9483683,0
+            -93.0885197,44.9484048,0
+            -93.0885656,44.9483683,0
+            -93.0885817,44.9482459,0
+            -93.0884838,44.9481367,0
+            -93.0889317,44.9479013,0
+            -93.0886233,44.9475587,0
+            -93.0887804,44.9474833,0
+            -93.0886233,44.9475587,0
+            -93.0886098,44.9475446,0
+            -93.0881445,44.9477637,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Twin Cities Public Television
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0877331,44.9476408,0
+            -93.0872875,44.9471975,0
+            -93.0869943,44.9473542,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Union Depot
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0867516,44.9474606,0
+            -93.0865962,44.9475367,0
+            -93.0867035,44.9476544,0
+            -93.0861724,44.9479069,0
+            -93.0859263,44.9476403,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wells Fargo Place
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0949273,44.9478505,0
+            -93.0956407,44.9478638,0
+            -93.0957561,44.9474481,0
+            -93.0956783,44.9473665,0
+            -93.0957561,44.9474481,0
+            -93.0956407,44.9478638,0
+            -93.0961369,44.947936,0
+            -93.0963956,44.9478472,0
+            -93.0961369,44.947936,0
+            -93.0962988,44.9481158,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Town Square
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0933852,44.9480633,0
+            -93.0939974,44.9482563,0
+            -93.0946703,44.9479638,0
+            -93.0939948,44.9482582,0
+            -93.0945366,44.9484784,0
+            -93.0947978,44.9487684,0
+            -93.0945366,44.9484784,0
+            -93.0939974,44.9482601,0
+            -93.0940967,44.9477817,0
+            -93.0937236,44.9473614,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>City Walk Condominiums
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0949735,44.9489962,0
+            -93.0952581,44.9492784,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Securian Center 401
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.09318,44.9481354,0
+            -93.0931398,44.9481547,0
+            -93.0929815,44.9480028,0
+            -93.0924129,44.9482724,0
+            -93.0922453,44.9480998,0
+            -93.0924156,44.9482762,0
+            -93.0925926,44.9484565,0
+            -93.0922117,44.948616,0
+            -93.0925926,44.9484565,0
+            -93.0928867,44.9487797,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Golden Rule Building
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0929712,44.9488755,0
+            -93.0932283,44.9491267,0
+            -93.0933356,44.9490812,0
+            -93.093416,44.9491799,0
+            -93.0933356,44.9490812,0
+            -93.0932283,44.9491286,0
+            -93.092817,44.9493188,0
+            -93.0930888,44.9491932,0
+            -93.0933919,44.9494817,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Securian Center 400 Building
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0918608,44.9488224,0
+            -93.0916078,44.9489531,0
+            -93.0912913,44.948917,0
+            -93.0911599,44.9487557,0
+            -93.0906269,44.9489863,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Mears Park Place Apt
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0902326,44.9492075,0
+            -93.0893272,44.9496394,0
+            -93.0894884,44.949563,0
+            -93.0893758,44.9494542,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Parks Square Center
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0890241,44.9497979,0
+            -93.0882277,44.9501819,0
+            -93.088313,44.9502555,0
+            -93.0882733,44.9502255,0
+            -93.0881145,44.9502887,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Pioneer / Endicott Building
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0890125,44.9473599,0
+            -93.0893568,44.9471948,0
+            -93.089393,44.9472309,0
+            -93.0894816,44.9471853,0
+            -93.0894534,44.947154,0
+            -93.0897243,44.9470211,0
+            -93.0896673,44.9469632,0
+            -93.0897256,44.9470202,0
+            -93.0900542,44.9468436,0
+            -93.0902567,44.9470458,0
+            -93.0902987,44.9470242,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 27</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0905146,44.9469245,0
+            -93.0910934,44.9466215,0
+            -93.0914853,44.9470645,0
+            -93.0914581,44.9470315,0
+            -93.0916593,44.9469385,0
+            -93.0914528,44.9470315,0
+            -93.0909566,44.9464639,0
+            -93.0904791,44.9467145,0
+            -93.0912758,44.9462987,0
+            -93.0910022,44.946443,0
+            -93.0908767,44.9463445,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 28</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0915966,44.9471917,0
+            -93.0918192,44.9474263,0
+            -93.0912369,44.9476653,0
+            -93.0916368,44.9475023,0
+            -93.0920803,44.9479166,0
+            -93.0916368,44.9475023,0
+            -93.0918219,44.9474263,0
+            -93.0919453,44.9474852,0
+            -93.0920163,44.9474918,0
+            -93.0920794,44.9474871,0
+            -93.0921585,44.9474548,0
+            -93.0922081,44.9474187,0
+            -93.0922349,44.947339,0
+            -93.0921357,44.9472327,0
+            -93.0922349,44.947339,0
+            -93.09231,44.9473058,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 29</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0925876,44.9471719,0
+            -93.092715,44.9471131,0
+            -93.0926399,44.9470296,0
+            -93.0930423,44.9468587,0
+            -93.0931657,44.947003,0
+            -93.093332,44.9470258,0
+            -93.0935185,44.9472134,0
+            -93.0933266,44.947022,0
+            -93.0931657,44.9469992,0
+            -93.0930423,44.9468587,0
+            -93.0931281,44.9468283,0
+            -93.0929429,44.9466004,0
+            -93.0931281,44.9468245,0
+            -93.093332,44.9467334,0
+            -93.0934124,44.9468359,0
+            -93.0934961,44.9467998,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 30</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0937684,44.9466669,0
+            -93.09435,44.9463989,0
+            -93.0946487,44.9466764,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 31</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0948003,44.9468339,0
+            -93.0950658,44.9467262,0
+            -93.0956783,44.9473665,0
+            -93.0955218,44.947197,0
+            -93.0950229,44.9474628,0
+            -93.0951677,44.9476071,0
+            -93.0948566,44.9477703,0
+            -93.0949273,44.9478505,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 49
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0920635,44.9457865,0
+            -93.0927149,44.946441,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 33</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0924592,44.9461804,0
+            -93.0926335,44.9460988,0
+            -93.0925048,44.9459773,0
+            -93.0926726,44.9458933,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>The Lowry
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0947002,44.9445771,0
+            -93.0948316,44.9445039,0
+            -93.0950771,44.9447507,0
+            -93.0951135,44.9447342,0
+            -93.0950771,44.9447507,0
+            -93.0953681,44.9450554,0
+            -93.0947968,44.9453363,0
+            -93.094879,44.9454174,0
+            -93.0947954,44.9453363,0
+            -93.094656,44.9454028,0
+            -93.0945192,44.9452689,0
+            -93.0943083,44.9453668,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lawson Commons
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0950091,44.9455445,0
+            -93.0950657,44.9455977,0
+            -93.095409,44.9454325,0
+            -93.0960581,44.9460779,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>375 Jackson St
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0909834,44.9477887,0
+            -93.0903638,44.9480877,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>375 Jackson St
+</name>
+        <styleUrl>#line-0F9D58-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0902605,44.9481361,0
+            -93.0899297,44.9483086,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Skyway Bridge</name>
+      <Placemark>
+        <name>Bridge 45
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.100615,44.9439599,0
+            -93.1006601,44.9438223,0
+            -93.100699,44.9436134,0
+            -93.1007057,44.9434122,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 42
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0955443,44.94439,0
+            -93.0955335,44.9443454,0
+            -93.0956194,44.9441992,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 27
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0951135,44.9447342,0
+            -93.0952984,44.9446497,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 40
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0950091,44.9455445,0
+            -93.094879,44.9454174,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 28
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0943083,44.9453668,0
+            -93.0940521,44.9455083,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 39
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0935779,44.9457456,0
+            -93.093421,44.945588,0
+            -93.0932305,44.9456782,0
+            -93.0931354,44.9455813,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 33
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0928215,44.9454561,0
+            -93.0926565,44.9452915,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 29
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0929382,44.9457598,0
+            -93.0926726,44.9458933,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 43
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0919109,44.9450874,0
+            -93.0922703,44.9449146,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 46
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0926096,44.9451909,0
+            -93.0927356,44.9451311,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 24
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0929429,44.9466004,0
+            -93.0927149,44.946441,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 20
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0934961,44.9467998,0
+            -93.0937684,44.9466669,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 16
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0948003,44.9468339,0
+            -93.0946487,44.9466764,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 17
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0937236,44.9473614,0
+            -93.0935185,44.9472134,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 18</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0922453,44.9480998,0
+            -93.0920803,44.9479166,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 7
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0946703,44.9479638,0
+            -93.0949273,44.9478505,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 3
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0966636,44.9485391,0
+            -93.0962988,44.9481158,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 4
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0949735,44.9489962,0
+            -93.0947978,44.9487684,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 5
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0935655,44.9496561,0
+            -93.0933919,44.9494817,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 9
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0929712,44.9488755,0
+            -93.0928867,44.9487797,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 12
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0918608,44.9488224,0
+            -93.0922117,44.948616,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 11
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.09318,44.9481354,0
+            -93.0933852,44.9480633,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 13
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0902326,44.9492075,0
+            -93.0906269,44.9489863,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 14
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0890241,44.9497979,0
+            -93.0893272,44.9496394,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 15
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.087908,44.950395,0
+            -93.0881145,44.9502887,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 19
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0893758,44.9494542,0
+            -93.0892376,44.9493119,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 23
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0897191,44.9484529,0
+            -93.0899297,44.9483086,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 22
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0909834,44.9477887,0
+            -93.0912369,44.9476653,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 48
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0902605,44.9481361,0
+            -93.0903638,44.9480877,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 26
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0887035,44.9485386,0
+            -93.0885197,44.9484048,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 36
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0879852,44.9477813,0
+            -93.0878672,44.9478382,0
+            -93.0879074,44.9478173,0
+            -93.0877331,44.9476408,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 31
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0887804,44.9474833,0
+            -93.0890125,44.9473599,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 37
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0869943,44.9473542,0
+            -93.0867516,44.9474606,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 51
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0859263,44.9476403,0
+            -93.0857118,44.9474163,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 30</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0902987,44.9470242,0
+            -93.0905146,44.9469245,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 34
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0908767,44.9463445,0
+            -93.0906836,44.9462382,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 25
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0914853,44.9470645,0
+            -93.0915966,44.9471917,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 21
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.09231,44.9473058,0
+            -93.0925876,44.9471719,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 44
+</name>
+        <styleUrl>#line-0288D1-7975-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0920635,44.9457865,0
+            -93.0918731,44.9455929,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Reduced Hours Bridge/Path</name>
+      <Placemark>
+        <name>George Latimer Central Library
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0970906,44.9439864,0
+            -93.0970906,44.9438991,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>City Hall
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0941759,44.9444195,0
+            -93.094255,44.9443834,0
+            -93.0942845,44.9444157,0
+            -93.0945701,44.9446378,0
+            -93.0947002,44.9445771,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Private Bridge
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0977737,44.9461069,0
+            -93.0977442,44.9462854,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 47
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0969876,44.9489379,0
+            -93.0968777,44.9488393,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 6
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0963956,44.9478472,0
+            -93.0966021,44.9477751,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 8
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0926011,44.9494232,0
+            -93.092817,44.9493188,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 55
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0883881,44.9503295,0
+            -93.088313,44.9502555,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 35
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0896673,44.9469632,0
+            -93.0894728,44.946837,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Sibley Square at Mears Park
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0878672,44.9478382,0
+            -93.0881912,44.9481871,0
+            -93.0881402,44.9482118,0
+            -93.0883924,44.9484672,0
+            -93.0885197,44.9484048,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 1
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0996066,44.9487872,0
+            -93.0991024,44.949015,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 2
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0980107,44.9496206,0
+            -93.0982628,44.9494953,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Gallery Towers & Scientology Center
+]]></name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0982628,44.9494953,0
+            -93.0991587,44.9490806,0
+            -93.0991024,44.949015,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bridge 56
+</name>
+        <styleUrl>#line-E65100-8169-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0952581,44.9492784,0
+            -93.0954217,44.9491996,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tunnel</name>
+      <Placemark>
+        <name>Tunnel Entrance
+</name>
+        <styleUrl>#icon-1783-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -93.097627,44.9440992,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tunnel Entrance
+</name>
+        <styleUrl>#icon-1783-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -93.0965696,44.9441087,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tunnel</name>
+        <styleUrl>#line-795548-7394-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -93.0985015,44.9442022,0
+            -93.0976391,44.9440987,0
+            -93.0970906,44.9441022,0
+            -93.0970906,44.9439864,0
+            -93.0970933,44.9441003,0
+            -93.09653,44.9441022,0
+            -93.0962431,44.9440776,0
+            -93.0957348,44.9441288,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
