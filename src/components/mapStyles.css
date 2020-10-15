@@ -1,0 +1,22 @@
+#map {
+  height: 150px;
+  position: relative;
+}
+
+@media (min-width: 650px) {
+  #map {
+    height: 200px;
+  }
+}
+
+@media (min-width: 800px) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #map {
+    height: 400px;
+  }
+}
