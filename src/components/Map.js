@@ -1,32 +1,34 @@
-import React, { Component } from "react";
-import { compose, withProps } from "recompose";
+import React, { Component } from 'react';
+import { compose, withProps } from 'recompose';
+
 const {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   KmlLayer,
-} = require("react-google-maps");
+} = require('react-google-maps');
+
+const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const Map = compose(
   withProps({
-    googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBtiuj_lCBX0RVNrkDcxq3csGf6buUrWWQ",
+    googleMapURL: `"https://maps.googleapis.com/maps/api/js?key=${GOOGLE_KEY}"`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100vh` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
-  withGoogleMap
+  withGoogleMap,
 )((props) => (
   <GoogleMap
     defaultZoom={16}
     defaultCenter={{ lat: 44.947479, lng: -93.091638 }}
-    mapTypeId={"terrain"}
+    mapTypeId={'terrain'}
   >
     <KmlLayer
       url={
-        "https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck" +
-        "&ver=" +
+        'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
+        '&ver=' +
         generateRandom()
       }
       options={{ preserveViewport: true }}
