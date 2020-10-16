@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { compose, withProps } from 'recompose';
 
 const {
@@ -10,6 +10,10 @@ const {
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
+function generateRandom() {
+  return Math.random() * 10000000000000000;
+}
+
 const Map = compose(
   withProps({
     googleMapURL: `"https://maps.googleapis.com/maps/api/js?key=${GOOGLE_KEY}"`,
@@ -19,25 +23,22 @@ const Map = compose(
   }),
   withScriptjs,
   withGoogleMap,
-)((props) => (
+)(() => (
   <GoogleMap
     defaultZoom={16}
     defaultCenter={{ lat: 44.947479, lng: -93.091638 }}
-    mapTypeId={'terrain'}
+    mapTypeId="terrain"
   >
     <KmlLayer
-      url={
+      url={`${
         'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
-        '&ver=' +
-        generateRandom()
-      }
+        '&ver='
+      }${generateRandom()}`}
       options={{ preserveViewport: true }}
     />
   </GoogleMap>
 ));
-function generateRandom() {
-  return Math.random() * 10000000000000000;
-}
+
 export default Map;
 
 // Examples
