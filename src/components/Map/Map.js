@@ -1,5 +1,6 @@
 import React from 'react';
 import { compose, withProps } from 'recompose';
+import ReportBtn from '../ReportBtn/ReportBtn';
 
 const {
   withScriptjs,
@@ -36,6 +37,7 @@ const Map = compose(
       }${generateRandom()}`}
       options={{ preserveViewport: true }}
     />
+    <ReportBtn />
   </GoogleMap>
 ));
 
