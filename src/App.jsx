@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
-import "./App.css";
-import Map from "./components/Map";
+import React from 'react';
+import './App.css';
+import Map from './components/Map';
 
 function App() {
   return (
-    <Fragment>
-      <Map></Map>
-    </Fragment>
+    <>
+      <Map />
+    </>
   );
 }
 
