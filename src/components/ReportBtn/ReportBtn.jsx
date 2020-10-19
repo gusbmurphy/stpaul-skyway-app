@@ -1,28 +1,70 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Fab from '@material-ui/core/Fab';
-import ReportProblemIcon from '@material-ui/icons/ReportProblem';
-// import './ReportBtn.module.css';
+import { Button, Popover, Typography } from '@material-ui/core';
 
+// Styling
 const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
-    position: 'absolute',
-    left: 0,
-    top: '60px',
-    // zIndex: 100,
+  typography: {
+    padding: theme.spacing(2),
   },
-  extendedIcon: {
-    marginRight: theme.spacing(1),
+  positioning: {
+    position: 'absolute',
+    bottom: 0,
+    margin: theme.spacing(1),
+  },
+  color: {
+    color: 'white',
+    backgroundColor: 'red',
   },
 }));
 
-export default function FloatingActionButtonSize() {
+// Button & Popover components
+export default function SimplePopover() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
+  const { color, positioning } = classes;
 
   return (
-    <Fab color="secondary" aria-label="add" className={classes.margin}>
-      <ReportProblemIcon fontSize="large" />
-    </Fab>
+    <div>
+      <Button
+        className={[color, positioning]}
+        aria-describedby={id}
+        variant="contained"
+        onClick={handleClick}
+      >
+        Report Issue
+      </Button>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+        <Typography className={classes.typography}>
+          Click <a href="https://www.stpaul.gov/report-incident">here</a> to
+          fill out an issue form
+        </Typography>
+      </Popover>
+    </div>
   );
 }
