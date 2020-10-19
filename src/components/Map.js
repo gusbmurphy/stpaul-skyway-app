@@ -1,12 +1,13 @@
 import React from 'react';
 import { compose, withProps } from 'recompose';
-
-const {
+import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   KmlLayer,
-} = require('react-google-maps');
+  Marker,
+} from 'react-google-maps';
+import UserLocationMarker from './UserLocationMarker';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
