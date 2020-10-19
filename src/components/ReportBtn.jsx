@@ -67,7 +67,7 @@ export default function SimplePopover() {
           To fill out an issue form, click{' '}
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://www.stpaul.gov/report-incident"
           >
             here
