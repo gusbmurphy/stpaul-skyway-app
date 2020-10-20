@@ -5,9 +5,9 @@ import {
   withGoogleMap,
   GoogleMap,
   KmlLayer,
-  Marker,
+  // Marker,
 } from 'react-google-maps';
-import UserLocationMarker from './UserLocationMarker';
+import UserLocationMarker from '../UserLocationMarker';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
