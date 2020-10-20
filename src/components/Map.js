@@ -37,6 +37,7 @@ const Map = compose(
       }${generateRandom()}`}
       options={{ preserveViewport: true }}
     />
+    <UserLocationMarker />
   </GoogleMap>
 ));
 
