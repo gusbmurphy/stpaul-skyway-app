@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Marker } from 'react-google-maps';
+import { Marker } from '@react-google-maps/api';
 
 // These functions are place holders, and should display meaningful information for the user
 function HandleGeolocationFailure() {
