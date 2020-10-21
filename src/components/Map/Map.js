@@ -26,6 +26,10 @@ const Map = compose(
   withGoogleMap,
 )(() => (
   <GoogleMap
+    defaultOptions={{
+      streetViewControl: false,
+      mapTypeControl: false,
+    }}
     defaultZoom={16}
     defaultCenter={{ lat: 44.947479, lng: -93.091638 }}
     mapTypeId="terrain"
