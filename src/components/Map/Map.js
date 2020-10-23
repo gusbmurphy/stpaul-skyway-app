@@ -1,13 +1,12 @@
 import React from 'react';
 import { compose, withProps } from 'recompose';
-import ReportBtn from '../ReportBtn/ReportBtn';
-
-const {
+import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   KmlLayer,
-} = require('react-google-maps');
+} from '@react-google-maps/api';
+import ReportBtn from '../ReportBtn/ReportBtn';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
