@@ -1,12 +1,12 @@
 import React from 'react';
-import { compose, withProps } from 'recompose';
+// import { compose, withProps } from 'recompose';
 import {
-  withScriptjs,
-  withGoogleMap,
   GoogleMap,
+  LoadScript,
   KmlLayer,
   // Marker,
-} from 'react-google-maps';
+  // useLoadScript,
+} from '@react-google-maps/api';
 import UserLocationMarker from '../UserLocationMarker';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -15,35 +15,64 @@ function generateRandom() {
   return Math.random() * 10000000000000000;
 }
 
-const Map = compose(
-  withProps({
-    googleMapURL: `"https://maps.googleapis.com/maps/api/js?key=${GOOGLE_KEY}"`,
-    loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `100vh` }} />,
-    mapElement: <div style={{ height: `100%` }} />,
-  }),
-  withScriptjs,
-  withGoogleMap,
-)(() => (
-  <GoogleMap
-    defaultOptions={{
-      streetViewControl: false,
-      mapTypeControl: false,
-    }}
-    defaultZoom={16}
-    defaultCenter={{ lat: 44.947479, lng: -93.091638 }}
-    mapTypeId="terrain"
-  >
-    <KmlLayer
-      url={`${
-        'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
-        '&ver='
-      }${generateRandom()}`}
-      options={{ preserveViewport: true }}
-    />
-    <UserLocationMarker />
-  </GoogleMap>
-));
+const mapContainerStyle = { height: `100vh` };
+const mapCenter = { lat: 44.947479, lng: -93.091638 };
+const mapOptions = {
+  streetViewControl: false,
+  mapTypeControl: false,
+};
+
+function Map() {
+  return (
+    <LoadScript googleMapsApiKey={GOOGLE_KEY}>
+      <GoogleMap
+        mapContainerStyle={mapContainerStyle}
+        center={mapCenter}
+        zoom={16}
+        options={mapOptions}
+      >
+        <KmlLayer
+          url={`${
+            'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
+            '&ver='
+          }${generateRandom()}`}
+          options={{ preserveViewport: true }}
+        />
+        <UserLocationMarker />
+      </GoogleMap>
+    </LoadScript>
+  );
+}
+
+// const Map = compose(
+//   withProps({
+//     googleMapURL: `"https://maps.googleapis.com/maps/api/js?key=${GOOGLE_KEY}"`,
+//     loadingElement: <div style={{ height: `100%` }} />,
+//     containerElement: <div style={{ height: `100vh` }} />,
+//     mapElement: <div style={{ height: `100%` }} />,
+//   }),
+//   withScriptjs,
+//   withGoogleMap,
+// )(() => (
+//   <GoogleMap
+//     defaultOptions={{
+//       streetViewControl: false,
+//       mapTypeControl: false,
+//     }}
+//     defaultZoom={16}
+//     defaultCenter={{ lat: 44.947479, lng: -93.091638 }}
+//     mapTypeId="terrain"
+//   >
+//     <KmlLayer
+//       url={`${
+//         'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
+//         '&ver='
+//       }${generateRandom()}`}
+//       options={{ preserveViewport: true }}
+//     />
+//     <UserLocationMarker />
+//   </GoogleMap>
+// ));
 
 export default Map;
 
