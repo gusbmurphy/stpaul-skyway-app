@@ -8,6 +8,7 @@ import {
   // useLoadScript,
 } from '@react-google-maps/api';
 import UserLocationMarker from '../UserLocationMarker';
+import KmlLayers from '../KmlLayers';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -15,6 +16,7 @@ function generateRandom() {
   return Math.random() * 10000000000000000;
 }
 
+// Map view constraints
 const mapContainerStyle = { height: `100vh` };
 const mapCenter = { lat: 44.947479, lng: -93.091638 };
 const mapOptions = {
@@ -31,13 +33,20 @@ function Map() {
         zoom={16}
         options={mapOptions}
       >
-        <KmlLayer
-          url={`${
-            'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
-            '&ver='
-          }${generateRandom()}`}
+        <KmlLayers />
+        {/* <KmlLayer
+          url={`https://www.google.com/maps/d/kml?mid=1lHXdmJbygBq3sfnb6DBxjNU_HVcD_fdr&ver=${generateRandom()}`}
           options={{ preserveViewport: true }}
         />
+        <KmlLayer
+          // url="https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO"
+          url={`https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO&ver=${generateRandom()}`}
+          options={{ preserveViewport: true }}
+        />
+        <KmlLayer
+          url={`https://www.google.com/maps/d/kml?mid=1_OITW9EF4lJg6NHGbbQkYrp-2STuKZ1r&ver=${generateRandom()}`}
+          options={{ preserveViewport: true }}
+        /> */}
         <UserLocationMarker />
       </GoogleMap>
     </LoadScript>
