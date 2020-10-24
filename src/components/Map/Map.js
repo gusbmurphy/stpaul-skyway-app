@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { compose, withProps } from 'recompose';
 import {
   GoogleMap,
@@ -9,6 +9,7 @@ import {
 } from '@react-google-maps/api';
 import UserLocationMarker from '../UserLocationMarker';
 import KmlLayers from '../KmlLayers';
+import Filter from '../Filter';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -25,6 +26,8 @@ const mapOptions = {
 };
 
 function Map() {
+  const [filterState, setFilterState] = useState({});
+  console.log(filterState);
   return (
     <LoadScript googleMapsApiKey={GOOGLE_KEY}>
       <GoogleMap
@@ -33,20 +36,30 @@ function Map() {
         zoom={16}
         options={mapOptions}
       >
-        <KmlLayers />
-        {/* <KmlLayer
+        <Filter
+          filterState={filterState}
+          setFilterState={setFilterState}
+          // state={[filterState, setFilterState]}
+        />
+        {/* <KmlLayers /> */}
+
+        <KmlLayer
           url={`https://www.google.com/maps/d/kml?mid=1lHXdmJbygBq3sfnb6DBxjNU_HVcD_fdr&ver=${generateRandom()}`}
           options={{ preserveViewport: true }}
         />
-        <KmlLayer
-          // url="https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO"
-          url={`https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO&ver=${generateRandom()}`}
-          options={{ preserveViewport: true }}
-        />
-        <KmlLayer
-          url={`https://www.google.com/maps/d/kml?mid=1_OITW9EF4lJg6NHGbbQkYrp-2STuKZ1r&ver=${generateRandom()}`}
-          options={{ preserveViewport: true }}
-        /> */}
+        {filterState === 10 && (
+          <KmlLayer
+            // url="https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO"
+            url={`https://www.google.com/maps/d/kml?mid=1z4rr032owH_VlORaVO50sof9rpWhJolO&ver=${generateRandom()}`}
+            options={{ preserveViewport: true }}
+          />
+        )}
+        {filterState === 20 && (
+          <KmlLayer
+            url={`https://www.google.com/maps/d/kml?mid=1_OITW9EF4lJg6NHGbbQkYrp-2STuKZ1r&ver=${generateRandom()}`}
+            options={{ preserveViewport: true }}
+          />
+        )}
         <UserLocationMarker />
       </GoogleMap>
     </LoadScript>
