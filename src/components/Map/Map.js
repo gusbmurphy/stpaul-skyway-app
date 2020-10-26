@@ -4,10 +4,32 @@ import {
   GoogleMap,
   LoadScript,
   KmlLayer,
-  // Marker,
+  Marker,
   // useLoadScript,
 } from '@react-google-maps/api';
+// import { marker } from 'leaflet';
 import UserLocationMarker from '../UserLocationMarker';
+
+const markerData = [
+  ['Skyway Masala', 44.9476, -93.09346, 'restaurant'],
+  ['Ricos Ice Cream', 44.94655, -93.09406, 'restaurant'],
+];
+// const infoWindow = new InfoWindow({
+//   content: ''
+// });
+
+// function addMarker(marker) {
+//   const category = marker[3];
+//   const title = marker[1];
+//   const position = new LatLng(marker[1], marker[2]);
+
+//   marker = new Marker({
+//     title,
+//     position,
+//     category,
+//     map,
+//   });
+// }
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -39,6 +61,14 @@ function Map() {
           options={{ preserveViewport: true }}
         />
         <UserLocationMarker />
+        {markerData.map((marker) => {
+          const position = {
+            lat: marker[1],
+            lng: marker[2],
+          };
+
+          return <Marker position={position} />;
+        })}
       </GoogleMap>
     </LoadScript>
   );
