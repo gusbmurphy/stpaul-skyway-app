@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { compose, withProps } from 'recompose';
 import {
   GoogleMap,
@@ -9,27 +9,14 @@ import {
 } from '@react-google-maps/api';
 // import { marker } from 'leaflet';
 import UserLocationMarker from '../UserLocationMarker';
+import Filter from '../Filter';
 
 const markerData = [
-  ['Skyway Masala', 44.9476, -93.09346, 'restaurant'],
-  ['Ricos Ice Cream', 44.94655, -93.09406, 'restaurant'],
+  [0, 'Skyway Masala', 44.9476, -93.09346, 'Restaurant'],
+  [1, 'Ricos Ice Cream', 44.94655, -93.09406, 'Restaurant'],
+  [2, 'Sass Boutique', 44.94766, -93.09136, 'Retail'],
+  [3, 'Uptown Girls', 44.94754, -93.09194, 'Retail'],
 ];
-// const infoWindow = new InfoWindow({
-//   content: ''
-// });
-
-// function addMarker(marker) {
-//   const category = marker[3];
-//   const title = marker[1];
-//   const position = new LatLng(marker[1], marker[2]);
-
-//   marker = new Marker({
-//     title,
-//     position,
-//     category,
-//     map,
-//   });
-// }
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -45,8 +32,10 @@ const mapOptions = {
 };
 
 function Map() {
+  const [category, setCategory] = useState('');
   return (
     <LoadScript googleMapsApiKey={GOOGLE_KEY}>
+      <Filter category={category} setCategory={setCategory} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={mapCenter}
@@ -61,13 +50,22 @@ function Map() {
           options={{ preserveViewport: true }}
         />
         <UserLocationMarker />
+        {/* Markers */}
         {markerData.map((marker) => {
+          // Coordinates
           const position = {
-            lat: marker[1],
-            lng: marker[2],
+            lat: marker[2],
+            lng: marker[3],
           };
 
-          return <Marker position={position} />;
+          // Filtering by category
+          // If category is blank
+          return category === '' ? (
+            <Marker position={position} />
+          ) : (
+            // Otherwise conditionally render category
+            marker[4] === category && <Marker position={position} />
+          );
         })}
       </GoogleMap>
     </LoadScript>

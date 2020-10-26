@@ -25,15 +25,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NativeSelects(props) {
   const classes = useStyles();
-  const { filterState, setFilterState } = props;
+  const { category, setCategory } = props;
   // const [state, setState] = React.useState({});
 
   const handleChange = (event) => {
-    const filter = event.target.name;
-    setFilterState({
-      // ...filterState,
-      [filter]: event.target.value,
-    });
+    setCategory(event.target.value);
   };
 
   return (
@@ -42,7 +38,7 @@ export default function NativeSelects(props) {
         <InputLabel htmlFor="outlined-map-filter">Filter</InputLabel>
         <Select
           native
-          value={filterState.filter}
+          value={category.filter}
           onChange={handleChange}
           label="filter"
           inputProps={{
@@ -51,8 +47,8 @@ export default function NativeSelects(props) {
           }}
         >
           <option aria-label="None" value="" />
-          <option value="restaurant">Restaurants</option>
-          <option value="retail">Retail</option>
+          <option value="Restaurant">Restaurants</option>
+          <option value="Retail">Retail</option>
         </Select>
       </FormControl>
     </div>
