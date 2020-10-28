@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import { compose, withProps } from 'recompose';
 import {
   GoogleMap,
@@ -10,13 +10,7 @@ import {
 // import { marker } from 'leaflet';
 import UserLocationMarker from '../UserLocationMarker';
 import Filter from '../Filter';
-
-const markerData = [
-  [0, 'Skyway Masala', 44.9476, -93.09346, 'Restaurant'],
-  [1, 'Ricos Ice Cream', 44.94655, -93.09406, 'Restaurant'],
-  [2, 'Sass Boutique', 44.94766, -93.09136, 'Retail'],
-  [3, 'Uptown Girls', 44.94754, -93.09194, 'Retail'],
-];
+import getSheetData from '../../utils/getSheetData';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -32,7 +26,14 @@ const mapOptions = {
 };
 
 function Map() {
+  const [markerData, setMarkerData] = useState([]);
   const [category, setCategory] = useState('');
+
+  // Grabbing marker data on render
+  useEffect(() => {
+    getSheetData().then((result) => setMarkerData(result));
+  }, []);
+
   return (
     <LoadScript googleMapsApiKey={GOOGLE_KEY}>
       <Filter category={category} setCategory={setCategory} />
@@ -44,7 +45,7 @@ function Map() {
       >
         <KmlLayer
           url={`${
-            'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
+            'https://www.google.com/maps/d/kml?mid=1lHXdmJbygBq3sfnb6DBxjNU_HVcD_fdr' +
             '&ver='
           }${generateRandom()}`}
           options={{ preserveViewport: true }}
@@ -52,19 +53,23 @@ function Map() {
         <UserLocationMarker />
         {/* Markers */}
         {markerData.map((marker) => {
+          const businessName = marker[0];
+
           // Coordinates
           const position = {
-            lat: marker[2],
-            lng: marker[3],
+            lat: parseFloat(marker[3]),
+            lng: parseFloat(marker[4]),
           };
 
           // Filtering by category
-          // If category is blank
+          // If the filter category is blank, render all
           return category === '' ? (
-            <Marker position={position} />
+            <Marker key={businessName} position={position} />
           ) : (
             // Otherwise conditionally render category
-            marker[4] === category && <Marker position={position} />
+            marker[1] === category && (
+              <Marker key={businessName} position={position} />
+            )
           );
         })}
       </GoogleMap>
