@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import { compose, withProps } from 'recompose';
 import {
   GoogleMap,
   LoadScript,
   KmlLayer,
-  // Marker,
+  Marker,
   // useLoadScript,
 } from '@react-google-maps/api';
+// import { marker } from 'leaflet';
 import UserLocationMarker from '../UserLocationMarker';
+import Filter from '../Filter';
+import getSheetData from '../../utils/getSheetData';
 
 const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -23,8 +26,17 @@ const mapOptions = {
 };
 
 function Map() {
+  const [markerData, setMarkerData] = useState([]);
+  const [category, setCategory] = useState('');
+
+  // Grabbing marker data on render
+  useEffect(() => {
+    getSheetData().then((result) => setMarkerData(result));
+  }, []);
+
   return (
     <LoadScript googleMapsApiKey={GOOGLE_KEY}>
+      <Filter category={category} setCategory={setCategory} />
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={mapCenter}
@@ -33,12 +45,33 @@ function Map() {
       >
         <KmlLayer
           url={`${
-            'https://www.google.com/maps/d/kml?mid=1Lzxsanw81e7VloBq1G5_1RZj9rGHrFck' +
+            'https://www.google.com/maps/d/kml?mid=1lHXdmJbygBq3sfnb6DBxjNU_HVcD_fdr' +
             '&ver='
           }${generateRandom()}`}
           options={{ preserveViewport: true }}
         />
         <UserLocationMarker />
+        {/* Markers */}
+        {markerData.map((marker) => {
+          const businessName = marker[0];
+
+          // Coordinates
+          const position = {
+            lat: parseFloat(marker[3]),
+            lng: parseFloat(marker[4]),
+          };
+
+          // Filtering by category
+          // If the filter category is blank, render all
+          return category === '' ? (
+            <Marker key={businessName} position={position} />
+          ) : (
+            // Otherwise conditionally render category
+            marker[1] === category && (
+              <Marker key={businessName} position={position} />
+            )
+          );
+        })}
       </GoogleMap>
     </LoadScript>
   );
