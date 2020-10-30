@@ -38,7 +38,7 @@ export default function NativeSelects(props) {
         <Select
           labelId="simple-select-outlined-label"
           id="simple-select-outlined"
-          value={category.filter}
+          value={category}
           onChange={handleChange}
           label="Filter"
         >
