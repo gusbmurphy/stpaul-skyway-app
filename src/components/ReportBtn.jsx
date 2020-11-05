@@ -37,12 +37,12 @@ export default function SimplePopover() {
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
 
-  const { color, positioning } = classes;
+  const { color, positioning, typography } = classes;
 
   return (
     <div>
       <Button
-        className={[color, positioning]}
+        className={`${color} ${positioning}`}
         aria-describedby={id}
         variant="contained"
         onClick={handleClick}
@@ -63,7 +63,7 @@ export default function SimplePopover() {
           horizontal: 'left',
         }}
       >
-        <Typography className={classes.typography}>
+        <Typography className={typography}>
           To fill out an issue form, click{' '}
           <a
             target="_blank"
