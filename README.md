@@ -2,8 +2,6 @@
 
 Visitors, residents and workers have long suffered from a skyway navigation system that causes more confusion than solutions. Existing systems rely on static maps that are often outdated, inconsistent and generally unhelpful. The current system is not widely accessible, and we want as many people as possible to be able to easily enjoy the cultural amenities, employment opportunities and everything else that is housed within Downtown Saint Paul's skyway system.
 
-This project's goal is to innovate a modernized solution to this problem – perhaps an interactive map or guidance and navigation system, a web or mobile app that helps people navigate the skyway system, which could also have other applications (interface with Passport parking app, emergency response / 9-1-1, and non-emergency methods to report a concern, such as poor building maintenance/ heating or cooling, etc.).
-
 ## Live Demo
 
 Visit https://stpaul-skyway.netlify.app/
