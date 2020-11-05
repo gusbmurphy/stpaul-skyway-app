@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# St. Paul Skyway Map
 
-## Available Scripts
+Visitors, residents and workers have long suffered from a skyway navigation system that causes more confusion than solutions. Existing systems rely on static maps that are often outdated, inconsistent and generally unhelpful. The current system is not widely accessible, and we want as many people as possible to be able to easily enjoy the cultural amenities, employment opportunities and everything else that is housed within Downtown Saint Paul's skyway system.
 
-In the project directory, you can run:
+## Live Demo
 
-### `yarn start`
+Visit https://stpaul-skyway.netlify.app/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Clone this repository
+2. Clone into folder of your choice
+3. To access cloned repository type `cd stpaul-skyway-app` in command line
+4. Type `yarn install` in command line to install necessary packages
+5. The Google Maps API requires a key which you can obtain from [here](https://developers.google.com/maps/documentation/javascript/overview)
+6. Create a file called ".env" outside of src folder.
+7. Add Google Maps API key as variable to the .env file as such REACT_APP_GOOGLE_API_KEY="<yourKey>".
+8. Type `yarn start` to run the application
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users are able to:
 
-### `yarn build`
+- View a dynamic map of the Skyway
+- Report concerns to the city
+- Filter for Food & Coffee, Services, Retail, and Entertainment found in the Skyway
+- Find entrances/exits to the Skyway
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Future Implementations
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Interface with passport parking app
+- Emergency response
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology Used
 
-### `yarn eject`
+- React.js
+- KML
+- Material-UI
+- Google Maps API
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Geoffrey Hanson - [GitHub](https://github.com/GeoffreyHanson)
+- Matthew Sedlacek - [GitHub](https://github.com/matthewsedlacek)
+- Gus Murphy - [GitHub](https://github.com/gusbmurphy)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### UX/UI Desginers
 
-## Learn More
+- Joey Pearlman - [LinkedIn](https://www.linkedin.com/in/joeypearlman/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licensing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+For a copy of the GNU General Public License along write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
