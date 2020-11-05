@@ -23,6 +23,7 @@ const mapCenter = { lat: 44.947479, lng: -93.091638 };
 const mapOptions = {
   streetViewControl: false,
   mapTypeControl: false,
+  fullscreenControl: false,
 };
 
 function Map() {
